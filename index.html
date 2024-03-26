@@ -200,6 +200,55 @@
     /* ***************************** */
     /* End of styling projectsection */
 
+    /* Start styling contactsection */
+    #contactsession {
+        width: 80%;
+        margin: auto;
+        height: 100dvh;
+    }
+    /* set the profilecontainer */
+    .contactcontainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: normal;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid rgb(31, 178, 170, 0.3);
+    }
+
+    /* set the labels */
+    label{
+        display: block;
+    }
+
+    input[type=text], input[type=email], textarea{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 400px;
+        font-size: medium;
+        color: rgb(6, 180, 172);
+        border: 1px solid rgb(65, 142, 138);
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    input[type="reset"]{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 400px;
+        font-size: medium;
+        color: rgb(6, 180, 172);
+        border: 1px solid rgb(65, 142, 138);
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+    /* end of styling contactsection */
+
     /* Start of styling miscellaneous elements */
 /* *************************************** */
 
@@ -214,6 +263,13 @@
     text-decoration: none;
     color: rgb(178, 32, 32);
     font-size: small;
+}
+
+.divider{
+ margin: auto;
+ width: 80%;
+ height: 5em;
+ border-top: 1px dashed rgba(0, 0, 0, 0.3);
 }
 
 /* ************************************* */
@@ -357,8 +413,41 @@
 
     </section>
     <!-- End of projectsection -->
+
+    <!-- Start of divider -->
+    <div class="divider">
+    </div>
+    <!-- end of divider -->
+
+    <!-- start of contact session -->
+    <a name="contact"></a> 
+    <section id="contactsession">
+
+     <div class="sectiontitle">Let's talk!</div>
+     <div class="contactcontainer">
+     <form>
+        <div>
+          <label for="nameControlInpput">Name</label>
+          <input type="text" id="nameControlInpput" placeholder="e.g. john doe">
+        </div>
+          <label for="emailControlInpput">Name</label>
+          <input type="email" id="emailControlInpput" placeholder="name@example.com">
+        <div>
+          <label for="messageControlInpput">Name</label>
+          <textarea id="messageControlInpput" rows="3"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="Rrset">Reset</button>
+        </div>
+     </form>
+    </div> 
+    </section>
+    <!-- end of contact session -->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+
     var options = {
         strings: ["I'm Muhaimin!", "Welcome to my portfolio!"],
         typeSpeed: 100,
